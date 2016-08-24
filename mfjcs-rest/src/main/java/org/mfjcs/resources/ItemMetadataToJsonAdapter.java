@@ -16,7 +16,7 @@ public class ItemMetadataToJsonAdapter {
 
 	@JsonProperty
 	public String getHref() {
-		return UriBuilder.fromResource(ItemResource.class).path(itemMetadata.getId()).build().toString();
+		return UriBuilder.fromPath("/v1/api/items/").path(itemMetadata.getId()).build().toString();
 	}
 
 	@JsonProperty("sys_version")

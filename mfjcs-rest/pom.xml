@@ -41,6 +41,11 @@
             <artifactId>dropwizard-core</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.dropwizard</groupId>
+            <artifactId>dropwizard-testing</artifactId>
+			<scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.apache.solr</groupId>
             <artifactId>solr-solrj</artifactId>
             <version>6.1.0</version>

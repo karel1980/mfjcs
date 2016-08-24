@@ -17,7 +17,7 @@ public class ItemToJsonAdapter {
 	}
 
 	@JsonProperty
-	public ItemMetadataToJsonAdapter getMetaData() {
+	public ItemMetadataToJsonAdapter getMetadata() {
 		return itemMetadataToJsonAdapter;
 	}
 

@@ -3,4 +3,7 @@ logging:
   loggers:
     org.mfjcs: DEBUG
 
+server:
+  rootPath: /v1/api
+
 storageBasePath: ~/.mfjcs-dev/store
