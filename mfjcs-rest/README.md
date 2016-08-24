@@ -1,10 +1,21 @@
 # MFJCS
 
-## Starting and configuring Solr
+## Starting and stopping solr
 
-$SOLR_HOME/bin/solr start -c -s solr/home
-$SOLR_HOME/bin/solr zk -upconfig -d solr/conf/mfjcs-items -n mfjcs-items -z localhost:9983
-$SOLR_HOME/bin/solr create -c mfjcs-items -n mfjcs-items
+    $SOLR_HOME/bin/solr start -c -s solr/home
+    $SOLR_HOME/bin/solr stop
+
+## Upload solr configuration (only needed once)
+
+    $SOLR_HOME/bin/solr zk -upconfig -d solr/conf/mfjcs-items -n mfjcs-items -z localhost:9983
+
+# Create solr collection (only needed the first time or after deleting the collection)
+
+    $SOLR_HOME/bin/solr create -c mfjcs-items -n mfjcs-items
+
+## Delete the solr collection (to clear data)
+
+    $SOLR_HOME/bin/solr delete -c mfjcs-items
 
 ## Starting the REST API
 
